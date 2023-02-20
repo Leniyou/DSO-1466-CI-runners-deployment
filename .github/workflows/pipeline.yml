@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 16
       - name: Installing dependencies
-        run: npm install
+        run: npm install --no-fund --no-audit
       - name: Linter
         run : npm run eslint
       
