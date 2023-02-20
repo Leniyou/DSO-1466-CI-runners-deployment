@@ -1,20 +1,17 @@
-# DSO-1466-CI-runners-deployment
-A repository for CI runners deployment
+[![Deployment Pipeline](https://github.com/midudev/pokedex-for-ci/actions/workflows/pipeline.yml/badge.svg)](https://github.com/midudev/pokedex-for-ci/actions/workflows/pipeline.yml)
 
-## Sumary
-We need a way to configure GitHub Actions runners more easily and use an automated task.
+# Full Stack open CI/CD
 
-## Technical details
+This repository is used for the CI/CD module of the Full stack open course
 
-- Runners should be installed on a cloud instance/VM.
-- GitHub Actions runner can be installed on a per-project or per-organization basis. This Ansible Role should install it either way.
-- The runner authentication token should be passed in as a command-line argument:
+Fork the repository to complete course exercises
 
-```
-[...] -e RUNNER_AUTHENTICATION_TOKEN=<value>
-```
+## Commands
 
-## Expected outcomes
+Start by running `npm install` inside the project folder
 
-- A repository for CI runners deployment is created.
-- New runners can be deployed easily with the new playbook.
+`npm start` to run the webpack dev server
+`npm test` to run tests
+`npm run eslint` to run eslint
+`npm run build` to make a production build
+`npm run start-prod` to run your production build
