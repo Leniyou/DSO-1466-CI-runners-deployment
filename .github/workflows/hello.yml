@@ -1,0 +1,17 @@
+name: Hola
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo message
+        run: |
+          echo "Hi there"
+      - name: Fecha
+        run: date
+      - run: ls -l
